@@ -67,7 +67,7 @@ function SaveBot(event) {
     $('.email-ids').remove();
     localStorage.removeItem('formDraft');
     $('html, body').animate({
-        scrollTop: $('.orders').offset().top - 100
+        scrollTop: $('#response').offset().top - 100
     }, 500);
     doShowAll();
 }
