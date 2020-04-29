@@ -1,0 +1,394 @@
+/*** Google fonts ***/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/*** Global ***/
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+    color: #0f0538;
+    font-size: 19px;
+}
+
+body {
+    background: url(../images/bg.jpg) no-repeat center top #fff;
+    padding-bottom: 200px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    max-width: 860px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    margin: 50px auto;
+    max-width: 60%;
+}
+
+.save-animation {
+    position: absolute;
+    font-size: .8em;
+    color: rgba(66, 172, 205, 0.7);
+    bottom: -10px;
+    right: 20px;
+    border-radius: 6px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.save-animation svg {
+    margin-right: 6px;
+}
+
+
+/*** Form ***/
+
+#OrderList .floating-label {
+    position: relative;
+}
+
+#OrderList label {
+    position: absolute;
+    top: 10px;
+    font-weight: 400;
+    font-size: .75em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0 0 12px;
+    color: #aaa;
+    cursor: text;
+    line-height: 1.2;
+    z-index: 1;
+    transition: all .2s ease;
+}
+
+#OrderList .has-value label,
+#OrderList .focused label {
+    top: 0;
+    font-size: .5em;
+    cursor: auto;
+    margin: 0 0 0 12px;
+}
+
+#OrderList .focused label {
+    color: #42accd;
+    font-weight: 700;
+    margin: -5px 0 0 12px;
+}
+
+#OrderList .form-control {
+    min-height: 60px;
+    margin-bottom: 30px;
+    border-radius: 0;
+    border: none;
+    color: #0f0538;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    ;
+}
+
+#OrderList .form-control input {
+    background: transparent;
+}
+
+#OrderList .invalid-feedback.show {
+    display: block !important;
+}
+
+#OrderList input:required {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#OrderList select {
+    color: inherit !important;
+}
+
+#OrderList .btn {
+    background-color: #42accd;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    margin: 20px 0 40px;
+    float: right;
+    transition: all .3s ease;
+}
+
+#OrderList .btn:hover {
+    background-color: #0f0538;
+}
+
+#OrderList .btn span {
+    margin: 0 6px;
+}
+
+#OrderList .btn svg {
+    margin-right: 6px;
+}
+
+.cancel-item:hover {
+    color: #42accd;
+}
+
+#OrderList .form-control input::placeholder,
+#OrderList input.form-control::placeholder {
+    font-weight: 400;
+    color: #ccc;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+#OrderList .focused select,
+#OrderList .focused select option,
+#OrderList .focused .form-control input::placeholder,
+#OrderList .focused input.form-control::placeholder,
+#OrderList .has-value .form-control input::placeholder,
+#OrderList .has-value input.form-control::placeholder {
+    opacity: 1;
+}
+
+#OrderList .form-control:focus-within,
+#OrderList .input-group:focus-within,
+#OrderList .custom-select:focus,
+#OrderList textarea:focus,
+#OrderList select:focus,
+#OrderList input[type="text"]:focus,
+#OrderList input[type="password"]:focus,
+#OrderList input[type="datetime"]:focus,
+#OrderList input[type="datetime-local"]:focus,
+#OrderList input[type="date"]:focus,
+#OrderList input[type="month"]:focus,
+#OrderList input[type="time"]:focus,
+#OrderList input[type="week"]:focus,
+#OrderList input[type="number"]:focus,
+#OrderList input[type="email"]:focus,
+#OrderList input[type="url"]:focus,
+#OrderList input[type="search"]:focus,
+#OrderList input[type="tel"]:focus,
+#OrderList input[type="color"]:focus {
+    border-color: rgba(66, 172, 205, 0.8);
+    box-shadow: none;
+    text-shadow: none;
+    outline: 0 none;
+}
+
+#OrderList .input-group>.custom-select:not(:last-child),
+#OrderList .input-group>.form-control:not(:last-child) {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+#OrderList .input-group-text img {
+    max-width: 24px;
+}
+
+#OrderList .custom-control {
+    min-height: 2.25rem;
+}
+
+#OrderList .custom-switch {
+    padding-left: 3.25rem;
+    height: 50px;
+}
+
+#OrderList .custom-control-label::before {
+    height: 1.3rem;
+    top: .1rem;
+}
+
+#OrderList .custom-switch .custom-control-label::before {
+    width: 2.4rem;
+    left: -3.25rem;
+    border-radius: .65rem;
+    border: none;
+    background-color: #c4e5ef;
+    height: 1.2em;
+    cursor: pointer;
+}
+
+#OrderList .custom-switch .custom-control-label::after {
+    top: -0.15rem;
+    left: -3.45rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+#OrderList .custom-switch .custom-control-input:checked~.custom-control-label::after {
+    -webkit-transform: translateX(1.5rem);
+    transform: translateX(1.5rem);
+}
+
+#OrderList .custom-control-input:checked~.custom-control-label::before {
+    border-color: #42accd;
+    background-color: #42accd;
+}
+
+#OrderList .input-group>input:focus {
+    box-shadow: none !important;
+}
+
+#addBot span {
+    display: none;
+}
+
+#addBot.another span {
+    display: inline-block;
+}
+
+.bot-email {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-height: 35px;
+}
+
+.bot-email input {
+    flex: 1;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.email-ids {
+    display: inline-block;
+    background: #e1f1fa;
+    font-size: .9em;
+    line-height: 1;
+    padding: 2px 5px 1px 8px;
+    margin: 12px 8px 0 0;
+    border-radius: 4px;
+}
+
+
+/*** Orders ***/
+
+.orders {
+    font-size: .8em;
+    display: none;
+    transition: opacity .4s ease;
+}
+
+.orders .table th,
+.orders .table td {
+    padding: 15px 20px;
+}
+
+.orders .table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: #edf6fb;
+}
+
+#response code {
+    display: block;
+    padding: 20px 40px;
+    background-color: #f2f9fc;
+}
+
+
+/*** Icons ***/
+
+.feather {
+    width: 20px;
+    cursor: pointer;
+}
+
+
+/*** Datepicker ***/
+
+.datepicker-dropdown {
+    padding: 10px 20px;
+}
+
+.datepicker-dropdown table {
+    border-spacing: 7px 3px;
+    border-collapse: separate;
+    text-shadow: none !important;
+}
+
+.datepicker-dropdown table td.disabled {
+    opacity: .5;
+}
+
+
+/*** logo Eyes ***/
+
+.eyes {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+
+.eye {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    background: #fff;
+}
+
+.eye:last-child {
+    margin-left: 9px;
+}
+
+.eye:after {
+    /*pupil*/
+    position: absolute;
+    bottom: 12px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background: #0f0538;
+    border-radius: 50%;
+    content: " ";
+}
+
+
+/*** RESPONSIVE ***/
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    .custom-switch {
+        height: 70px;
+    }
+    .eyes {
+        display: none;
+    }
+}
