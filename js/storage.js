@@ -94,6 +94,9 @@ function doShowAll() {
             $('html, body').animate({
                 scrollTop: $('.orders').offset().top - 100
             }, 500);
+            $('input').val('').blur();
+            $('.email-ids').remove();
+            localStorage.removeItem('formDraft');
         } else {
             $('.orders').hide('slow');
             $('#addBot').removeClass('another');
