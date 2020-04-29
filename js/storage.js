@@ -63,6 +63,12 @@ function SaveBot(event) {
     }
     localData.push(data);
     localStorage.setItem('formData', JSON.stringify(localData));
+    $('input').val('').blur();
+    $('.email-ids').remove();
+    localStorage.removeItem('formDraft');
+    $('html, body').animate({
+        scrollTop: $('.orders').offset().top - 100
+    }, 500);
     doShowAll();
 }
 // Delete order data from localStorage
@@ -91,12 +97,6 @@ function doShowAll() {
         if (localData.length) {
             $('.orders').show('slow');
             $('#addBot').addClass('another');
-            $('html, body').animate({
-                scrollTop: $('.orders').offset().top - 100
-            }, 500);
-            $('input').val('').blur();
-            $('.email-ids').remove();
-            localStorage.removeItem('formDraft');
         } else {
             $('.orders').hide('slow');
             $('#addBot').removeClass('another');
